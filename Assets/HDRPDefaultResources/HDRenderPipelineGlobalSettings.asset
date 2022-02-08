@@ -107,6 +107,7 @@ MonoBehaviour:
     serializedBakeSettings:
     - sceneGUID: b1d986588d8f0704bba2a88f864e88b3
       settings:
+        m_Version: 1
         dilationSettings:
           enableDilation: 0
           dilationDistance: 2
@@ -117,11 +118,17 @@ MonoBehaviour:
           useVirtualOffset: 0
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
     serializedBakingSets:
     - name: Default
       sceneGUIDs:
       - b1d986588d8f0704bba2a88f864e88b3
       settings:
+        m_Version: 1
         dilationSettings:
           enableDilation: 0
           dilationDistance: 2
@@ -132,7 +139,15 @@ MonoBehaviour:
           useVirtualOffset: 0
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
       profile: {fileID: 11400000, guid: 56eb690e38629458ba0231c4596b520b, type: 2}
+      bakingStates:
+      - Default
+    m_BakingState: Default
   m_Version: 3
   m_ShaderVariantLogLevel: 0
   m_ExportShaderVariants: 1
